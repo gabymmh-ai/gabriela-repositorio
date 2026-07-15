@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositorio de Materiales - Psicología Clínica y de la Salud</title>
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #556178;
+      --accent: #3f7fff;
+      --border: rgba(79, 114, 255, 0.18);
+      --shadow: 0 28px 70px rgba(35, 45, 73, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 14px; /* reduced base size to make fonts 2px smaller */
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #f7f9fd 0%, #e8eff8 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 24px 40px;
+    }
+
+    header {
+      background: var(--surface);
+      border-radius: 28px;
+      padding: 34px 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 2.6vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 820px;
+      line-height: 1.7;
+    }
+
+    .features {
+      display: grid;
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .feature-card {
+      background: rgba(63, 127, 255, 0.08);
+      border: 1px solid rgba(63, 127, 255, 0.14);
+      border-radius: 20px;
+      padding: 20px 24px;
+    }
+
+    .feature-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #2d4268;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 30px;
+      padding-bottom: 8px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 780px;
+      border-collapse: collapse;
+      background: var(--surface);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 14px 40px rgba(35, 45, 73, 0.07);
+    }
+
+    th,
+    td {
+      padding: 18px 20px;
+      text-align: left;
+    }
+
+    /* Column width adjustments: make "Archivo" narrower and "Temas" wider */
+    table th:first-child,
+    table td:first-child {
+      width: 22%;
+    }
+
+    table th:nth-child(3),
+    table td:nth-child(3) {
+      width: 40%;
+    }
+
+    thead th {
+      background: linear-gradient(90deg, #3f7fff, #5a96ff);
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(79, 114, 255, 0.12);
+    }
+
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    tbody td {
+      color: var(--muted);
+      vertical-align: top;
+      line-height: 1.65;
+    }
+
+    tbody td:first-child {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .tip {
+      margin-top: 28px;
+      padding: 20px 24px;
+      border-radius: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      box-shadow: 0 16px 32px rgba(35, 45, 73, 0.05);
+    }
+
+    @media (max-width: 840px) {
+      .container {
+        padding: 22px 18px 32px;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      header,
+      .feature-card,
+      .tip {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Repositorio de Materiales - Psicología Clínica y de la Salud</h1>
+      <p>Estudiante: Gabriela Mora Hernández.</p>
+    </header>
+
+    <div class="features">
+      <div class="feature-card">
+        <strong>Objetivo</strong>
+        Compartir recursos académicos relevantes para el curso y apoyar el estudio con fuentes confiables.
+      </div>
+      <div class="feature-card">
+        <strong>Instrucciones</strong>
+        Haz clic en el enlace “Abrir” para leer cada material en una nueva pestaña del navegador.
+      </div>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Archivo</th>
+            <th>Autor(es)</th>
+            <th>Temas</th>
+            <th>Justificación</th>
+            <th>Enlace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Análisis de las funciones del psicólogo clínico con enfoque cognitivo-conductual: una aproximación de procesos</td>
+            <td>Omar Chávez, Nelly Flores, Diana González, Miranda Escamilla, Andrea González</td>
+            <td>
+              <li>Investigación de procesos en psicología clínica</li>
+              <li>Funciones del psicólogo en la intervención clínica</li>
+              <li>Ausencia de la función "entrenar"</li>
+              <li>Preferencia por funciones de regular y explorar</li>
+              <li>Modelo de momentos terapéuticos</li>
+            </td>
+            <td>Este material muestra cómo las funciones del psicólogo clínico se relacionan e inﬂuyen en la efectividad y adhrencia del paciente al tratamiento.</td>
+            <td><a href="https://www.academia.edu/download/118168961/Analisis_de_las_funciones_del_psicologo_clinico_con_enfoque_cognitivo_conductual._una_aproximacion_de_procesos_.pdf" target="_blank" rel="noreferrer">Abrir</a></td>
+          </tr>
+          <tr>
+            <td>Formulación de Casos en la Revista Psicología Clínica: Justificción de un Modelo</td>
+            <td>Sergio Sánchez y Carmen Caballero</td>
+            <td>
+              <li>Formulación de casos como competencia esencial</li>
+              <li>Equilibrio entre evidencia científica y práctica reflexiva</li>
+              <li>Modelos de formulación de casos</li>
+              <li>Propuesta de modelo para la Revista Psicología Clínica</li>
+              <li>Dimensión ética y contextual de la formulación de casos</li>
+            </td>
+            <td>El documento ofrece un modelo para la formulación de casos en psicología clínica, basado en un enfoque integrador y en el uso de evidencia.</td>
+            <td><a href="https://psicologiaclinica.anpir.org/index.php/pc/article/view/1/28" target="_blank" rel="noreferrer">Abrir</a></td>
+          </tr>
+          <tr>
+            <td>Psicología Clínica Basada en Pruebas: Efecto del Tratamiento</td>
+            <td>María Dolores Frías Navarro y Juan Pascual Llobell</td>
+            <td>
+              <li>Psicología Basada en Pruebas (PBP)</li>
+              <li>Evidencia válida</li>
+              <li>Investigación sistemática</li>
+              <li>Ensayos clínicos aleatorizados</li>
+            </td>
+            <td>La justificación se centra en promover habilidades tecnológicas y emocionales mediante actividades prácticas.</td>
+            <td><a href="https://www.redalyc.org/pdf/778/77808502.pdf" target="_blank" rel="noreferrer">Abrir</a></td>
+          </tr>
+          <tr>
+            <td>Una aproximación a los conceptos de códigos éticos y bioéticos de profesionales en psicología</td>
+            <td>Daniela María Terán Muñoz</td>
+            <td>
+              <li>Evolución de modelos psicológicos</li>
+              <li>Creación de equipos multiprofesionales y leyes de integración educativa y social.</li>
+              <li>Desarrollo de la psicología clínica y el sistema P.I.R. como especialidad sanitaria.</li>
+              <li>Clasificaciones DSM, CIE y la CIF en diagnóstico y discapacidad.</li>
+              <li>Psicología positiva y expansión hacia la salud y bienestar.</li>
+            </td>
+            <td>Este material justifica la importancia de contar con herramientas claras para medir el progreso académico.</td>
+            <td><a href="https://ojs.unemi.edu.ec/index.php/faso-unemi/article/view/1717/1626" target="_blank" rel="noreferrer">Abrir</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip">
+      La fuente del todo el material compartido proviene de Google Academic.    </div>
+  </div>
+</body>
+</html>
